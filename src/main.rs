@@ -2,7 +2,7 @@ mod handlers;
 mod models;
 mod routes;
 
-use axum::Router;
+
 use dotenvy::dotenv;
 use sqlx::postgres::PgPoolOptions;
 use std::env;

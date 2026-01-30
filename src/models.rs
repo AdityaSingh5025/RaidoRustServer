@@ -39,6 +39,7 @@ pub struct Trip {
     pub updated_at: Option<NaiveDateTime>,
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Deserialize)]
 pub struct SearchTripsQuery {
     #[serde(rename = "from")]
