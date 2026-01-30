@@ -18,7 +18,7 @@ pub fn create_router() -> Router<PgPool> {
         .route("/cities", get(get_all_cities))
 
         // Trips
-        // IMPORTANT: search must come before :id
+        // IMPORTANT: search BEFORE {id}
         .route("/trips/search", get(search_trips))
-        .route("/trips/:id", get(get_trip_handler))
+        .route("/trips/{id}", get(get_trip_handler))
 }
