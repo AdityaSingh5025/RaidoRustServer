@@ -115,7 +115,6 @@ pub async fn search_trips(
           t."createdAt",
           t."updatedAt",
 
-          r.price,
           r."sourceCityId",
           r."destinationCityId",
           r.checkpoints,
@@ -178,7 +177,6 @@ pub async fn search_trips(
           "isActive": r.isActive,
           "createdAt": r.createdAt,
           "updatedAt": r.updatedAt,
-          "price": r.price,
           "boardingCityId": r.sourceCityId,
           "destinationCityId": r.destinationCityId,
 
